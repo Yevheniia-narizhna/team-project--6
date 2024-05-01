@@ -11,14 +11,14 @@
 @import url('./sale.css');
 
 @font-face {
-    font-family: Gilroy;
+    font-family: "Gilroy";
     src: url(./gilroy/Gilroy-Black.eot), url(./gilroy/Gilroy-Black.ttf), url(./gilroy/Gilroy-Black.woff), url(./gilroy/Gilroy-Black.woff2);
 }
 @font-face {
-    font-family: Gilroy;
+    font-family: "Gilroy";
     src: url(./gilroy/Gilroy-BlackItalic.eot), url(./gilroy/Gilroy-BlackItalic.ttf), url(./gilroy/Gilroy-BlackItalic.woff), url(./gilroy/Gilroy-BlackItalic.woff2);
 }
 @font-face {
-    font-family: Gilroy;
+    font-family: "Gilroy";
     src: url(./gilroy/Gilroy-Bold.eot), url(./gilroy/Gilroy-Bold.ttf), url(./gilroy/Gilroy-Bold.woff)
 }
