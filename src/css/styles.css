@@ -18,7 +18,9 @@
     font-family: "Gilroy";
     src: url(./gilroy/Gilroy-BlackItalic.eot), url(./gilroy/Gilroy-BlackItalic.ttf), url(./gilroy/Gilroy-BlackItalic.woff), url(./gilroy/Gilroy-BlackItalic.woff2);
 }
+
 @font-face {
     font-family: "Gilroy";
-    src: url(./gilroy/Gilroy-Bold.eot), url(./gilroy/Gilroy-Bold.ttf), url(./gilroy/Gilroy-Bold.woff)
+    src: url(./gilroy/Gilroy-Bold.eot), url(./gilroy/Gilroy-Bold.ttf), url(./gilroy/Gilroy-Bold.woff);
 }
+
