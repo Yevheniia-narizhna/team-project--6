@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+}
+.reviews {
+}
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92%;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+.box {
+  border-radius: 30px;
+  padding: 32px 36px;
+  width: 370px;
+  height: 272px;
+  background-color: #f3f3f3;
+  gap: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.photo {
+  width: 56px;
+  height: 56px;
+}
+.name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(12, 12, 12, 0.4);
+}
