@@ -11,14 +11,36 @@
 @import url('./sale.css');
 
 @font-face {
-    font-family: "Gilroy";
-    src: url(./gilroy/Gilroy-Black.eot), url(./gilroy/Gilroy-Black.ttf), url(./gilroy/Gilroy-Black.woff), url(./gilroy/Gilroy-Black.woff2);
+    font-family: 'Gilroy-medium';
+    src: url('../css/gilroy/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../css/gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../css/gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('../css/gilroy/Gilroy-Medium.woff') format('woff'),
+        url('../css/gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 @font-face {
-    font-family: "Gilroy";
-    src: url(./gilroy/Gilroy-BlackItalic.eot), url(./gilroy/Gilroy-BlackItalic.ttf), url(./gilroy/Gilroy-BlackItalic.woff), url(./gilroy/Gilroy-BlackItalic.woff2);
+    font-family: 'Gilroy-semibold';
+    src: url('../css/gilroy/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../css/gilroy/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../css/gilroy/Gilroy-Semibold.woff2') format('woff2'),
+        url('../css/gilroy/Gilroy-Semibold.woff') format('woff'),
+        url('../css/gilroy/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
+
 @font-face {
-    font-family: "Gilroy";
-    src: url(./gilroy/Gilroy-Bold.eot), url(./gilroy/Gilroy-Bold.ttf), url(./gilroy/Gilroy-Bold.woff)
+    font-family: 'Gilroy-regular';
+    src: url('../css/gilroy/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('../css/gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../css/gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('../css/gilroy/Gilroy-Regular.woff') format('woff'),
+        url('../css/gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
