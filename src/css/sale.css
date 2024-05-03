@@ -32,8 +32,6 @@ a {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 16px;
   background: #f3f3f3;
-  width: 80px;
-  height: 80px;
 }
 
 .sale-image {
@@ -43,8 +41,6 @@ a {
 .sale-image-wrap {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
-  width: 335px;
-  height: 385px;
   background: #f3f3f3;
 }
 
@@ -54,8 +50,6 @@ a {
 
 .sale-description {
   border-radius: 30px;
-  width: 335px;
-  height: 561px;
   background: #3350e9;
   padding: 48px 28px;
 }
