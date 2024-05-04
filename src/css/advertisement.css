@@ -1,26 +1,33 @@
-.advertisement{
-    border-radius: 30px;
-width: 335px;
-height: 363px;
-background: #0c0c0c;
-box-shadow: 0 4px 4px 0 ;
-background-image: linear-gradient(
-    rgba(12, 12, 12, 1),
-  ),
- url("../img/Images-advert/imagemobaile-1x.jpg");
- background-repeat: no-repeat;
- background-position: center center;
+
+.advertisement {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .Advertisement {
-      background-image: 
-        url("../img/Images-advert/imagemobaile-2x.jpg")
-    }
-  }
+.advertisement::before {
+    content: "";
+    background-image:
+        url("../img/Images-advert/imagemobaile-1x.jpg");
+    opacity: 0.2;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
 .advert {
+    display: flex;
+    flex-direction: column;
     padding: 60px 28px 28px 28px;
+    border-radius: 30px;
+    width: 335px;
+    height: 363px;
+    background-color: #0C0C0C;
 }
 .advertisement-title{
     font-family: 'Gilroy-semibold';
@@ -28,7 +35,7 @@ background-image: linear-gradient(
     font-size: 32px;
     line-height: 1;
     letter-spacing: -0.02em;
-    color: #fbfbfb;
+    color: #FBFBFB;
     max-width: 279px;
 }
 .advertisement-span{
@@ -40,7 +47,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.3;
 text-align: center;
-color: #fbfbfb;
+color: #FBFBFB;
     border: 1px solid rgba(251, 251, 251, 0.15);
 border-radius: 16px;
 width: 160px;
