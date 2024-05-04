@@ -7,11 +7,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .advertisement::before {
     content: "";
     background-image:
-        url("../img/Images-advert/imagemobaile-1x.jpg");
+        url("/img/Images-advert/imagemobaile-1x.jpg");
     opacity: 0.2;
     background-size: cover;
     position: absolute;
@@ -57,4 +58,16 @@ width: 160px;
 height: 48px;
 margin-right: auto;
 display: block;
+}
+
+@media screen and (min-width: 768px) {
+   
+    .advert {
+        width: 704px;
+    }
+    .advertisement-title {
+    font-size: 48px;
+    max-width: 576px;
+    }
+    
 }
