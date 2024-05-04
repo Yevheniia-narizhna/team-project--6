@@ -12,7 +12,9 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
-
+a {
+  text-decoration: none;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -32,7 +34,7 @@ body {
   font-family: 'Gilroy-medium';
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
     color: rgba(12, 12, 12, 0.7);
 }
@@ -108,9 +110,6 @@ padding-right: 32px;
     padding-left: 65px;
     padding-right: 65px;
   }
-    .section {
-      margin-bottom: 80px;
-    }
         .section {
           margin-bottom: 100px;
         }

@@ -1,0 +1,94 @@
+
+ <section class="contact-section">
+      <div class="container">
+        <h2 class="contact-header">Contact Us</h2>
+        <div class="contact">
+          <div class="contact-form">
+            <p class="contact-text">
+              Please use the form below to contact us. Enter your name, email,
+              phone, and message and we'll get back to you shortly.
+            </p>
+            <form class="comment-form">
+              <div class="comment-field">
+                <label for="user-name"></label>
+                <input
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Name"
+                  class="comment-input"
+                  required
+                />
+              </div>
+              <div class="comment-field">
+                <label for="user-email"></label>
+                <input
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="Email"
+                  class="comment-input"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  required
+                />
+              </div>
+              <div class="comment-field">
+                <label for="user-tel"></label>
+                <input
+                  type="tel"
+                  id="user-tel"
+                  name="user-tel"
+                  placeholder="+380"
+                  class="comment-input"
+                  pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+                  title="+380-XX-XXX-XX-XX"
+                  required
+                />
+              </div>
+
+              <label for="user-comment"></label>
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                placeholder="Comment"
+                class="comment-area"
+              ></textarea>
+
+              <button type="submit" class="contact-button">Send</button>
+            </form>
+          </div>
+          <div class="contact-picture">
+            <picture>
+              <source
+                srcset="
+                  ../img/contacts/contact-desc.jpg    1x,
+                  ../img/contacts/contact-desc-2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ../img/contacts/contact-tablet.jpg    1x,
+                  ../img/contacts/contact-tablet-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ../img/contacts/contact-mobile.jpg    1x,
+                  ../img/contacts/contact-mobile-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="../img/contacts/contact-mobile.jpg"
+                alt="Watch on a stone"
+                class="contact-image"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
