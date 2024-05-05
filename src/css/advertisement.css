@@ -1,15 +1,20 @@
 
-.advertisement {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+.advert {
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;  
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 60px 28px 28px 28px;
+    border-radius: 30px;
+    width: 335px;
+    height: 363px;
+    background-color: #0C0C0C;
 }
-.advertisement::before {
+.advert::before {
     content: "";
     background-image:
         url("/img/Images-advert/imagemobaile-1x.jpg");
@@ -20,16 +25,9 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-}
-.advert {
-    display: flex;
-    flex-direction: column;
-    padding: 60px 28px 28px 28px;
     border-radius: 30px;
-    width: 335px;
-    height: 363px;
-    background-color: #0C0C0C;
 }
+
 .advertisement-title{
     font-family: 'Gilroy-semibold';
     font-weight: 600;
@@ -38,7 +36,6 @@
     letter-spacing: -0.02em;
     color: #FBFBFB;
     max-width: 279px;
-    margin-bottom: 28px;
 }
 .advertisement-span{
     color: rgba(251, 251, 251, 0.5);
@@ -60,14 +57,62 @@ margin-right: auto;
 display: block;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .advert::before {
+            background-image:
+                url("/img/Images-advert/imagemobaile-2x.jpg");
+        }
+}
+
 @media screen and (min-width: 768px) {
    
     .advert {
+        gap: 32px;
         width: 704px;
+        height: 425px;
+        padding: 80px 64px 80px 64px;
     }
     .advertisement-title {
     font-size: 48px;
     max-width: 576px;
     }
+        .advert::before {
+            background-image:
+                    url("/img/Images-advert/imagetab-1x.jpg");
+        }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+(min-resolution: 192dpi) and (min-width: 768px) {
+    .advert::before {
+            background-image:
+                url("/img/Images-advert/imagetab-2x.jpg");
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    .advert {
+        flex-direction: row;
+        gap: 140px;
+        align-items: flex-start;
+        width: 1150px;
+        height: 298px;
+        padding: 83px 80px 83px 80px;
+        }
     
+        .advertisement-title {
+            max-width: 690px;
+        }
+    .advert::before {
+            background-image:
+                url("/img/Images-advert/imagedes-1x.jpg");
+        }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+(min-resolution: 192dpi) and (min-width: 1280px) {
+.advert::before {
+        background-image:
+            url("/img/Images-advert/imagedes-2x.jpg");
+    }
 }
