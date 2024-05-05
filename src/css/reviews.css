@@ -1,4 +1,4 @@
-.section-rewiews {
+.section-reviews {
   padding-top: 80px;
   padding-bottom: 80px;
   background: #fff;
@@ -24,12 +24,13 @@
   margin-bottom: 24px;
 }
 .name {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 110%;
   letter-spacing: -0.02em;
   text-align: center;
   margin-bottom: 8px;
+  color: black;
 }
 .text {
   font-weight: 500;
@@ -65,12 +66,13 @@
   }
   .cards {
     width: calc((100% - 18px) / 2);
-    height: 258px;
-    padding: 20px 20px;
+
+    padding: 32px 36px;
   }
   text {
     font-size: 16px;
-    line-height: 1.4;
+    color: #0c0c0c;
+    line-height: 125%;
   }
 }
 
@@ -83,9 +85,9 @@
   }
   .reviews {
     gap: 25px;
-    max-width: 1150px;
   }
   .text {
     font-size: 16px;
+    line-height: 125%;
   }
 }
