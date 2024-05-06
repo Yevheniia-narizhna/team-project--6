@@ -55,7 +55,6 @@
 
     .hero-wrap-one {
         max-width: 557px;
-        row-gap: 11px;
     }
 
     .hero-title {
@@ -67,6 +66,7 @@
         padding-bottom: 0;
         font-size: 16px;
         line-height: 1.25;
+        max-width: 480px;
     }
 
     .hero-wrap-two {
