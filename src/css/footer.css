@@ -1,8 +1,4 @@
 .footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     border-radius: 30px;
     padding: 40px 28px 28px 28px;
     background-color: #0C0C0C;
@@ -92,12 +88,10 @@
     padding-bottom: 92px;
 }
 .box{
-    width: 279px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    height: 64px;
     margin-bottom: 24px;
 }
 
@@ -126,7 +120,6 @@ height: 64px;
     font-size: 12px;
     line-height: 1.3;
    padding-left: 49px;
-   padding-bottom: 16px;
 }
 .icon-vector{
     stroke-width: 1px;
@@ -157,25 +150,18 @@ height: 64px;
 
 @media (min-width: 768px){
     .footer{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 10px;
-        border-radius: 30px;
-        padding: 40px 40px 28px 40px;
         width: 704px;
         height: 540px;
     }
     .holder{
-        width: 624px;
         flex-direction: row;
+        flex-wrap: wrap;
+        width: 624px;
         justify-content: space-between;
     }
     .button-footer{
         max-width: 160px;
         height: 48px;
-        padding: 15px;
         font-size: 14px;
         line-height: 1.28571; 
         text-transform: uppercase; 
@@ -187,10 +173,20 @@ height: 64px;
         font-size: 28px;
         line-height: 1.1;
         letter-spacing: -0.02em;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 86px;
+        padding-bottom: 100px;
     }
-    .box{
-        padding-top: 100px;
+        .nav-item-f, .text-nav {
+      font-size: 14px; 
     }
+    .box {
+        margin-bottom: 28px;
+    }
+        .text-nav {
+            padding-left: 62px;
+        }
    .nav-list{
     display: flex;
     align-items: flex-end;
@@ -200,15 +196,45 @@ height: 64px;
     width: 400px;
     height: 18px;
    }
+   .icon-vector-f {
+       width: 624px;
+    }
+           .footer-paragraph {
+            flex-direction: row;
+            padding-top: 24px;
+            font-size: 14px;
+            width: 624px;
+            height: 18px;
+            column-gap: 0;
+           }
+           .paragraph-text-f {
+            padding-left: 20px;
+           }
+           .paragraph {
+            padding-right: 159px;
+           }
 }
 
 
 @media (min-width: 1280px){
     .footer{
-        border-radius: 30px;
-        padding: 40px 40px 28px 40px;
         width: 1216px;
         height: 400px;
     }
-   
-}
+    .holder {
+        width: 1136px;
+    }
+  
+   .subject-wrapper {
+    width: 523px;   
+    margin-top: 40px;
+    transform: translate(-50%, -50%);
+    padding-left: 0;
+        padding-right: 0;
+        padding-top: 86px;
+        padding-bottom: 100px;
+   }
+   .text-nav {
+    padding-left: 469px;
+   }
+   }
