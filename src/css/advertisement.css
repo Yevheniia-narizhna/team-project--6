@@ -69,5 +69,9 @@ display: block;
     font-size: 48px;
     max-width: 576px;
     }
-    
+    .advertisement::before {
+        content: "";
+    background-image:
+        url("../img/about-tab-x1.jpg");
+    }
 }
