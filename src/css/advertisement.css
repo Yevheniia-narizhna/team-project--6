@@ -59,6 +59,20 @@ height: 48px;
 margin-right: auto;
 display: block;
 }
+<<<<<<< Updated upstream
+=======
+.advert-button:hover,
+.advert-button:focus {
+    background-color: #fbfbfb;
+  }
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .advert::before {
+            background-image:
+                url("/img/Images-advert/imagemobaile-2x.jpg");
+        }
+}
+>>>>>>> Stashed changes
 
 @media screen and (min-width: 768px) {
    
@@ -69,9 +83,57 @@ display: block;
     font-size: 48px;
     max-width: 576px;
     }
+<<<<<<< Updated upstream
     .advertisement::before {
         content: "";
     background-image:
         url("../img/about-tab-x1.jpg");
+=======
+        .advert::before {
+            background-image:
+                    url("/img/Images-advert/imagetab-1x.jpg");
+        }
+        .advert-button:hover,
+.advert-button:focus {
+    background-color: #fbfbfb;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+(min-resolution: 192dpi) and (min-width: 768px) {
+    .advert::before {
+            background-image:
+                url("/img/Images-advert/imagetab-2x.jpg");
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    .advert {
+        flex-direction: row;
+        gap: 140px;
+        align-items: flex-start;
+        width: 1150px;
+        height: 298px;
+        padding: 83px 80px 83px 80px;
+        }
+    
+        .advertisement-title {
+            max-width: 690px;
+        }
+    .advert::before {
+            background-image:
+                url("/img/Images-advert/imagedes-1x.jpg");
+        }
+        .advert-button:hover,
+.advert-button:focus {
+    background-color: #fbfbfb;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+(min-resolution: 192dpi) and (min-width: 1280px) {
+.advert::before {
+        background-image:
+            url("/img/Images-advert/imagedes-2x.jpg");
+>>>>>>> Stashed changes
     }
 }
