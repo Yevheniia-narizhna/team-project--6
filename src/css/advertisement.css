@@ -59,8 +59,7 @@ height: 48px;
 margin-right: auto;
 display: block;
 }
-<<<<<<< Updated upstream
-=======
+
 .advert-button:hover,
 .advert-button:focus {
     background-color: #fbfbfb;
@@ -72,10 +71,9 @@ display: block;
                 url("/img/Images-advert/imagemobaile-2x.jpg");
         }
 }
->>>>>>> Stashed changes
+
 
 @media screen and (min-width: 768px) {
-   
     .advert {
         width: 704px;
     }
@@ -83,12 +81,12 @@ display: block;
     font-size: 48px;
     max-width: 576px;
     }
-<<<<<<< Updated upstream
+}
     .advertisement::before {
         content: "";
     background-image:
         url("../img/about-tab-x1.jpg");
-=======
+
         .advert::before {
             background-image:
                     url("/img/Images-advert/imagetab-1x.jpg");
@@ -134,6 +132,6 @@ display: block;
 .advert::before {
         background-image:
             url("/img/Images-advert/imagedes-2x.jpg");
->>>>>>> Stashed changes
+
     }
 }
