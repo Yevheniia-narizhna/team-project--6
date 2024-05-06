@@ -59,6 +59,8 @@
 }
 
 .open-menu-btn {
+    width: 34px;
+    height: 34px;
     padding: 0;
     line-height: 0;
     border-color: transparent;
@@ -74,6 +76,7 @@
     height: 100%;
     position: fixed;
     top: 0;
+    z-index: 999;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -101,15 +104,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 73px;
-    height: 238px;
     margin: 240px 64px 260px 63px;
 }
 
 .menu-close-btn {
-    position: absolute;
     width: 34px;
     height: 34px;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,8 +150,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 122px;
-    height: 34px;
     margin: 0 39px 40px 39px;
 }
 
@@ -204,16 +203,27 @@
             .main-solutions {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/header-img/image-tab-2x.jpg);
             }
-
-    .mob-menu-wrap {
-        margin: 309px 129px 350px 128px;
-    }
-
-        .mob-soc-icons {
-            margin: 0 101px 50px 101px;
         }
+    .mob-menu-wrap {
+     margin: 309px 129px 350px 128px;
     }
-}
+
+    .mob-soc-icons {
+     margin: 0 101px 50px 101px;
+        }
+
+    .open-menu-btn {
+     width: 40px;
+     height: 40px;
+     }
+
+    .menu-close-btn {
+     width: 40px;
+     height: 40px;
+     }
+
+    }
+
 
  
 
@@ -246,10 +256,6 @@
         font-size: 20px;
     }
 
-    .icon-soc {
-        stroke-width: 2.50px;
-        stroke: #fff;
-    }
 
     .icon-list {
         display: flex;
