@@ -46,7 +46,7 @@
     opacity: 0.8;
 }
 
-.icon-list {
+.icon-list-desk {
     display: none;
     
 }
@@ -256,16 +256,20 @@
         font-size: 20px;
     }
 
-
-    .icon-list {
+        
+    .icon-list-desk {
         display: flex;
         margin: 0 auto;
         gap: 10px;
     }
-        .icon-link {
-        fill: #0c0c0c;
-            
-        }
+    .icon-item-desk {
+        border: 1px solid rgba(12, 12, 12, 0.1);
+            border-radius: 10px;
+            padding: 8px;
+            width: 36px;
+            height: 36px;
+    }
+       
 
         .current {
         color: #0c0c0c;
