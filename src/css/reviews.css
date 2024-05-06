@@ -1,13 +1,15 @@
 .section-reviews {
   padding-top: 80px;
-  padding-bottom: 80px;
+
   background: #fff;
 }
-
+.reviews {
+  gap: 20px;
+}
 .title {
   font-weight: 600;
-  font-size: 48px;
-  line-height: 92%;
+  font-size: 32px;
+  line-height: 100%;
   letter-spacing: -0.02em;
   margin-bottom: 40px;
   color: black;
@@ -15,7 +17,7 @@
 .cards {
   border-radius: 30px;
   padding: 32px 36px;
-  height: 262px;
+  width: 100%;
   background: #f3f3f3;
 }
 .photo {
@@ -51,21 +53,20 @@
 @media screen and (min-width: 768px) {
   .section-reviews {
     padding-top: 100px;
-    padding-bottom: 100px;
   }
   .list-victoria {
     display: block;
   }
   .reviews {
     display: flex;
-    gap: 18px;
+    gap: 16px;
   }
   .name {
     font-size: 18px;
     line-height: 1.1;
   }
   .cards {
-    width: calc((100% - 18px) / 2);
+    width: calc((100% - 16px) / 2);
 
     padding: 32px 36px;
   }
@@ -74,6 +75,10 @@
     color: #0c0c0c;
     line-height: 125%;
   }
+  .title {
+    font-size: 48px;
+    line-height: 92%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -81,7 +86,7 @@
     display: block;
   }
   .cards {
-    width: calc((100% - 25px * 2) / 3);
+    width: calc((100% - 40px) / 3);
   }
   .reviews {
     gap: 25px;
@@ -89,5 +94,9 @@
   .text {
     font-size: 16px;
     line-height: 125%;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 92%;
   }
 }
