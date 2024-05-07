@@ -33,7 +33,6 @@ background: #f3f3f3;
 .button-about {
     text-align: center;
     border-radius: 16px;
-   
     height: 48px;
     font-family: 'Gilroy-medium';
     font-weight: 500;
@@ -51,11 +50,6 @@ background: #f3f3f3;
         width: 160px;
     }
 }
-
-
-.button-about:hover,
-.button-about:focus {
-    background-color: #1f3cd4; }
 
 .img-about {
     height: 446px;
@@ -115,4 +109,8 @@ background: #f3f3f3;
         width: 530px;
         height: 532px;
 } 
+.button-about:hover,
+.button-about:focus {
+    background-color: #1f3cd4;
+}
 }
