@@ -1,6 +1,5 @@
 .footer{
     border-radius: 30px;
-    padding: 40px 28px 28px 28px;
     background-color: #0C0C0C;
     border-radius: 30px; 
     font-family: 'Gilroy-medium';
@@ -9,20 +8,18 @@
     line-height: 1.28571;
     letter-spacing: -0.02em;
     color: #FBFBFB;
-    /* width: 335px; */
-    gap: 92px;   
-
-}
-@media  (min-width: 375px) {
-.footer {
     width: 335px;
+    gap: 92px;  
+    padding-left: 0; 
+    padding-right: 0;
 }
-}
+
 .holder {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column; 
+    padding: 40px 28px 28px 28px;
 }
 .footer-wrapper {
     display: flex;
@@ -30,7 +27,6 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 20px;
-
 }
  .text-f {
     font-weight: 500;
@@ -51,6 +47,7 @@
 .socials {
     display: flex;
     padding-top: 20px;
+    gap: 10px;
 }
 .social-icons{
     border: 1px solid rgba(251, 251, 251, 0.1);
@@ -59,9 +56,6 @@
     fill: #FBFBFB;
     opacity: 0.8;
 }
-
-
-
 
 .button-footer{
     text-align: center;
@@ -79,15 +73,16 @@
     color: #FBFBFB;
     background-color: #0C0C0C;
 }
-
+.subject {
+margin-top: 40px;
+margin-bottom: 92px;
+}
 .subject-wrapper{
     font-family: 'Gilroy-semibold';
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.02em;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 92px;
 }
 .box{
     display: flex;
@@ -123,10 +118,7 @@ height: 64px;
     line-height: 1.3;
    padding-left: 49px;
 }
-.icon-vector{
-    stroke-width: 1px;
-    stroke: rgba(251, 251, 251, 0.1);
-}
+
 .footer-paragraph {
     display: flex;
     flex-wrap: wrap;
@@ -134,7 +126,7 @@ height: 64px;
         justify-content: flex-start;
         row-gap: 8px;
         column-gap: 20px;
-        width: 187px;
+        width: 279px;
     font-weight: 500;
     font-size: 10px;
     line-height: 1.28571;
@@ -142,12 +134,15 @@ height: 64px;
     color: rgba(251, 251, 251, 0.5);
     opacity: 0.9;
     padding-top: 48px;
-    
+    padding-bottom: 28px;
+    padding-right: 92px;
+    height: 24px;
 }
 
 
 .line {
     position: relative;
+    padding-bottom: 12px;
 }
 
 .line::after {
@@ -157,7 +152,7 @@ height: 64px;
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #fff;
+    background-color: rgba(251, 251, 251, 0.1);;
 }
 
 /* .icon-vector-f{
@@ -169,12 +164,12 @@ height: 64px;
 @media (min-width: 768px){
     .footer{
         width: 704px;
-        height: 540px;
     }
     .holder{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 40px 40px 28px 40px;
     }
     .button-footer{
         max-width: 160px;
@@ -184,8 +179,16 @@ height: 64px;
         text-transform: uppercase; 
         text-align: left;
         flex-direction: row-reverse;
-        float: left;
+        float: right;
+        margin-top: -13%;
     }
+    .wrapper {
+        margin-right: 336px;
+    }
+        .subject {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
     .subject-wrapper{
         font-size: 28px;
         line-height: 1.1;
@@ -199,10 +202,10 @@ height: 64px;
       font-size: 14px; 
     }
     .box {
-        margin-bottom: 28px;
+        gap: 62px;
     }
         .text-nav {
-            margin-left: 62px;
+            padding-left: 0;
         }
    .nav-list{
     display: flex;
@@ -218,11 +221,12 @@ height: 64px;
     }
            .footer-paragraph {
             flex-direction: row;
-            padding-top: 24px;
+            padding-top: 56px;
             font-size: 14px;
             width: 624px;
             height: 18px;
             column-gap: 0;
+            padding-right: 0;
            }
            .paragraph-text-f {
             padding-left: 20px;
@@ -234,11 +238,13 @@ height: 64px;
 
 
 @media (min-width: 1280px){
+   
     .footer{
         width: 1216px;
-        height: 400px;
     }
-    
+        .wrapper {
+            margin-right: 178px;
+        }
   .descop-cont {
     display: block;
     margin-top: 0;
@@ -246,6 +252,8 @@ height: 64px;
   .button-footer {
    float: right;
     width: 50%;
+    margin-top: 0;
+    margin-left: 147px;
   }
 
   .footer-paragraph {
@@ -257,11 +265,8 @@ height: 64px;
   }
 
    .subject-wrapper {
-    float: left;
-    width: 50%;
-    text-align: center;
     padding: 0;
-    margin-left: 178px;
+
    }
 
    .box {
