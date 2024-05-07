@@ -75,8 +75,7 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
     stroke: #0C0C0C;
 }
 
-.mob-menu {
-    width: 200px;
+.backdrop {
     height: 100%;
     position: fixed;
     top: 0;
@@ -88,13 +87,21 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
     justify-content: space-between;
     visibility: hidden;
     background-color: #0C0C0C;
-    background-image: url(../img/header-img/image-mob.jpg);
+    background-image: url(/img/header-img/image-mob.jpg);
+}
+.mob-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 200px;
+        height: 100%;
+        padding: 240px 64px 40px 64px;
 }
 
  @media screen and (min-resolution: 2dppx),
  (min-resolution: 192dpi) {
      .main-solutions {
-         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/header-img/image-mob-2x.jpg);
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/header-img/image-mob-2x.jpg);
      }
     }
 
@@ -108,7 +115,6 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 240px 64px 260px 63px;
 }
 
 .menu-close-btn {
@@ -154,7 +160,6 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 39px 40px 39px;
 }
 
 .mob-icon-list {
@@ -185,7 +190,7 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
     border-radius: 50%;
     position: absolute;
     content: "";
-    left: 50%;
+    left: 45%;
     width: 8px;
     height: 8px;
     bottom: -10px;
@@ -203,8 +208,9 @@ visibility: visible;
         stroke: rgba(12, 12, 12, 0.1);
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .mob-menu {
+    padding: 310px 128px 50px 128px;
       width: 330px;
     background-image: url(/img/header-img/image-tab.jpg);
     }
@@ -218,7 +224,7 @@ visibility: visible;
 
 
     .mob-soc-icons {
-     margin: 0 101px 50px 101px;
+
         }
 
     .open-menu-btn {
@@ -246,7 +252,7 @@ visibility: visible;
      display: none;
     }
 
-    .mob-menu {
+    .backdrop {
         display: none;
     }
     .header-menu-list {
