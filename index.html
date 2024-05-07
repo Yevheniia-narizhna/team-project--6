@@ -18,10 +18,10 @@
     />
     
     <script type="module" crossorigin src="/team-project--6/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/team-project--6/assets/index-ac9c5f4b.css">
+    <link rel="stylesheet" href="/team-project--6/assets/index-4a76e315.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
   <div class="container header-container">
     <nav class="header-nav">
       <a href="./index.html" class="header-logo">watchcharm</a>
@@ -30,19 +30,19 @@
           <a class="header-menu-link current" href="./index.html">Home</a>
         </li>
         <li class="header-menu-item">
-          <a class="header-menu-link" href="">About Us</a>
+          <a class="header-menu-link" href="#about">About Us</a>
         </li>
         <li class="header-menu-item">
-          <a class="header-menu-link" href="">Catalog</a>
+          <a class="header-menu-link" href="#catalog">Catalog</a>
         </li>
         <li class="header-menu-item">
-          <a class="header-menu-link" href="">Sale</a>
+          <a class="header-menu-link" href="#sale">Sale</a>
         </li>
         <li class="header-menu-item">
-          <a class="header-menu-link" href="">Reviews</a>
+          <a class="header-menu-link" href="#reviews">Reviews</a>
         </li>
         <li class="header-menu-item">
-          <a class="header-menu-link" href="">Contact Us</a>
+          <a class="header-menu-link" href="#contact">Contact Us</a>
         </li>
       </ul>
     </nav>
@@ -77,12 +77,8 @@
       </svg>
     </button>
   </div>
-  <span class="vector-hed">
-    <svg class="vector-icon-hed" width="" height="2">
-      <use href="/team-project--6/assets/symbol-defs (2)-247a7bcb.svg#icon-Vector"></use>
-    </svg>
-  </span>
-  <div class="mob-menu">
+
+  <div class="mob-menu is-open">
     <div class="mob-menu-wrap">
       <button type="button" class="menu-close-btn">
         <svg class="menu-icon-close" width="" height="">
@@ -94,19 +90,19 @@
           <a class="mob-menu-link current" href="./index.html">Home</a>
         </li>
         <li class="mob-menu-item">
-          <a class="mob-menu-link" href="">About Us</a>
+          <a class="mob-menu-link" href="#about">About Us</a>
         </li>
         <li class="mob-menu-item">
-          <a class="mob-menu-link" href="">Catalog</a>
+          <a class="mob-menu-link" href="#catalog">Catalog</a>
         </li>
         <li class="mob-menu-item">
-          <a class="mob-menu-link" href="">Sale</a>
+          <a class="mob-menu-link" href="#sale">Sale</a>
         </li>
         <li class="mob-menu-item">
-          <a class="mob-menu-link" href="">Reviews</a>
+          <a class="mob-menu-link" href="#reviews">Reviews</a>
         </li>
         <li class="mob-menu-item">
-          <a class="mob-menu-link" href="">Contact Us</a>
+          <a class="mob-menu-link" href="#contact">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -198,7 +194,7 @@
   </div>
 </section>
 
-      <section class="section-about">
+      <section class="section section-about" id="about">
   <div class="container div-about">
     <div class="desctiption-about">
       <h2 class="title-about">About Us</h2>
@@ -242,7 +238,7 @@
   </div>
 </section>
 
-      <section class="section section-catalog">
+      <section class="section section-catalog" id="catalog">
   <div class="container">
     <h2 class="catalog-title">Catalog</h2>
     <ul class="catalog-list">
@@ -414,16 +410,17 @@
 </section>
 
       <section class="section advertisement">
-    <div class="container advert">
-      <h2 class="visually-hidden">Advertisement</h2>
-      <p class="advertisement-title">
-        Choose <span class="advertisement-span">your story</span>, making every
-        moment unique. Time is your style, and we reveal it.
-      </p>
-      <button type="button" class="advert-button">Contact Us</button>
-    </div>
-  </section>
-      <section class="section-sale">
+  <div class="container advert">
+    <h2 class="visually-hidden">Advertisement</h2>
+    <p class="advertisement-title">
+      Choose <span class="advertisement-span">your story</span>, making every
+      moment unique. Time is your style, and we reveal it.
+    </p>
+    <a class="advert-contact" href="#contact">Contact Us</a>
+  </div>
+</section>
+
+      <section class="section-sale" id="sale">
   <div class="container">
     <h2 class="sale-title">Sale</h2>
     <div class="sale-container-wrap">
@@ -589,7 +586,7 @@
   </div>
 </section>
 
-      <section class="section section-reviews">
+      <section class="section section-reviews" id="reviews">
   <div class="container container-reviews">
     <h2 class="title">Reviews</h2>
     <ul class="reviews">
@@ -646,7 +643,7 @@
 </section>
 
       
- <section class=" section contact-section">
+ <section class=" section contact-section" id="contact">
       <div class="container">
         <h2 class="contact-header">Contact Us</h2>
         <div class="contact">
@@ -783,22 +780,22 @@
       <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item-f">
-            <a class="nav-link-f" href="#">Home</a>
+            <a class="nav-link-f" href="#home">Home</a>
           </li>
           <li class="nav-item-f">
-            <a class="nav-link-f" href="#">About Us</a>
+            <a class="nav-link-f" href="#about">About Us</a>
           </li>
           <li class="nav-item-f">
-            <a class="nav-link-f" href="#">Catalog</a>
+            <a class="nav-link-f" href="#catalog">Catalog</a>
           </li>
           <li class="nav-item-f">
-            <a class="nav-link-f" href="#">Sale</a>
+            <a class="nav-link-f" href="#sale">Sale</a>
           </li>
           <li class="nav-item-f">
-            <a class="nav-link-f" href="#">Reviews</a>
+            <a class="nav-link-f" href="#reviews">Reviews</a>
           </li>
           <li class="nav-item-f">
-            <a class="nav-link-f" href="#">Contact Us</a>
+            <a class="nav-link-f" href="#contact">Contact Us</a>
           </li>
         </ul>
       </nav>
