@@ -47,10 +47,12 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
     padding: 8px;
     opacity: 0.8;
 }
-
+.icon-link:hover,
+.icon-link:focus {
+    opacity: 1;
+}
 .icon-list-desk {
     display: none;
-    
 }
 
 .icon-item {
@@ -177,7 +179,6 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
 .current {
     position: relative;
     color: #fbfbfb;
-    ;
 }
 
 .current:after {
@@ -191,6 +192,10 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
     background-color: #404bbf;
     display: block;
     text-align: center;
+    visibility: hidden;
+}
+.current:after:focus, .current:after:hover {
+visibility: visible;
 }
 .vector-icon-hed {
     width: 415px;
@@ -201,13 +206,13 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
 @media screen and (min-width: 780px) {
   .mob-menu {
       width: 330px;
-    background-image: url(../img/header-img/image-tab.jpg);
+    background-image: url(/img/header-img/image-tab.jpg);
     }
 
         @media screen and (min-resolution: 2dppx),
         (min-resolution: 192dpi) {
             .main-solutions {
-                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/header-img/image-tab-2x.jpg);
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/header-img/image-tab-2x.jpg);
             }
         }
 
@@ -247,7 +252,8 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
     .header-menu-list {
         display: flex;
         gap: 40px;
-        
+    padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .header-menu-link {
@@ -268,15 +274,21 @@ border-bottom: 1px solid rgba(12, 12, 12, 0.1);
         display: flex;
         margin: 0 auto;
         gap: 10px;
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
     .icon-item-desk {
+        display: block;
         border: 1px solid rgba(12, 12, 12, 0.1);
             border-radius: 10px;
             padding: 8px;
             width: 36px;
             height: 36px;
     }
-       
+           .icon-item-desk:hover,
+                   .icon-item-desk:focus {
+                    fill: #3350e9;
+                   }
 
         .current {
         color: #0c0c0c;
