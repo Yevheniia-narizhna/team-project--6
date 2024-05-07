@@ -252,7 +252,7 @@ visibility: visible;
     .header-menu-list {
         display: flex;
         gap: 40px;
-    padding-top: 30px;
+        padding-top: 30px;
         padding-bottom: 30px;
     }
 
@@ -285,8 +285,8 @@ visibility: visible;
             width: 36px;
             height: 36px;
     }
-           .icon-item-desk:hover,
-                   .icon-item-desk:focus {
+           .icon-link-desk:hover,
+                   .icon-link-desk:focus {
                     fill: #3350e9;
                    }
 

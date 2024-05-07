@@ -80,8 +80,6 @@ background: #f3f3f3;
 
     .div-about {
         gap: 40px;
-        padding-left: 32px;
-        padding-right: 32px;
     }
 
     .desctiption-about {
@@ -98,8 +96,6 @@ background: #f3f3f3;
     .div-about {
         flex-direction: row;
         gap: 40px;
-            padding-left: 32px;
-            padding-right: 32px;
         }
 
     .desctiption-about {
