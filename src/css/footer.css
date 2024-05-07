@@ -238,9 +238,15 @@ height: 64px;
     width: 50%;
     text-align: center;
     padding: 0;
-   }
-   .text-nav {
-    padding-left: 469px;
+    margin-left: 178px;
    }
 
+   .text-nav {
+    padding-left: 469px;
+    padding-right: 0;
    }
+.descop-wrap {
+    display: flex;
+    padding-bottom: 126px;
+}
+ }
