@@ -224,17 +224,23 @@ height: 64px;
     .holder {
         width: 1136px;
     }
-  
+  .descop-cont {
+    display: block;
+    margin-top: 0;
+  }
+  .button-footer {
+   float: right;
+    width: 50%;
+  }
+
    .subject-wrapper {
-    width: 523px;   
-    margin-top: 40px;
-    transform: translate(-50%, -50%);
-    padding-left: 0;
-        padding-right: 0;
-        padding-top: 86px;
-        padding-bottom: 100px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 0;
    }
    .text-nav {
     padding-left: 469px;
    }
+
    }
