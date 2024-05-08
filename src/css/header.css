@@ -5,7 +5,9 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.header {
+border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+}
 .header-nav {
     display: flex;
     align-items: center;
@@ -45,10 +47,12 @@
     padding: 8px;
     opacity: 0.8;
 }
-
-.icon-list {
+.icon-link:hover,
+.icon-link:focus {
+    opacity: 1;
+}
+.icon-list-desk {
     display: none;
-    
 }
 
 .icon-item {
@@ -59,6 +63,8 @@
 }
 
 .open-menu-btn {
+    width: 34px;
+    height: 34px;
     padding: 0;
     line-height: 0;
     border-color: transparent;
@@ -69,29 +75,37 @@
     stroke: #0C0C0C;
 }
 
-.mob-menu {
-    width: 200px;
+.backdrop {
     height: 100%;
     position: fixed;
     top: 0;
+    right: 0;
+    z-index: 999;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    justify-content: space-between;
     visibility: hidden;
     background-color: #0C0C0C;
-    background-image: url(../img/header-img/image-mob.jpg);
+    background-image: url(/img/header-img/image-mob.jpg);
+}
+.mob-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 200px;
+        height: 100%;
+        padding: 240px 64px 40px 64px;
 }
 
  @media screen and (min-resolution: 2dppx),
  (min-resolution: 192dpi) {
      .main-solutions {
-         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/header-img/image-mob-2x.jpg);
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/header-img/image-mob-2x.jpg);
      }
     }
 
-.is-open-menu {
+.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -101,15 +115,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 73px;
-    height: 238px;
-    margin: 240px 64px 260px 63px;
 }
 
 .menu-close-btn {
-    position: absolute;
     width: 34px;
     height: 34px;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,9 +160,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 122px;
-    height: 34px;
-    margin: 0 39px 40px 39px;
 }
 
 .mob-icon-list {
@@ -176,44 +184,64 @@
 .current {
     position: relative;
     color: #fbfbfb;
-    ;
 }
 
 .current:after {
     border-radius: 50%;
     position: absolute;
     content: "";
+    left: 45%;
     width: 8px;
     height: 8px;
-    left: 15px;
     bottom: -10px;
     background-color: #404bbf;
     display: block;
     text-align: center;
+    visibility: hidden;
+}
+.current:focus:after, .current:hover:after {
+visibility: visible;
+}
+.vector-icon-hed {
+    width: 415px;
+    stroke-width: 1px;
+        stroke: rgba(12, 12, 12, 0.1);
 }
 
-
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .mob-menu {
+    padding: 310px 128px 50px 128px;
       width: 330px;
-    background-image: url(../img/header-img/image-tab.jpg);
+    background-image: url(/img/header-img/image-tab.jpg);
     }
 
         @media screen and (min-resolution: 2dppx),
         (min-resolution: 192dpi) {
             .main-solutions {
-                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/header-img/image-tab-2x.jpg);
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/header-img/image-tab-2x.jpg);
             }
-
-    .mob-menu-wrap {
-        margin: 309px 129px 350px 128px;
-    }
-
-        .mob-soc-icons {
-            margin: 0 101px 50px 101px;
         }
+
+
+    .mob-soc-icons {
+
+        }
+
+    .open-menu-btn {
+     width: 40px;
+     height: 40px;
+     }
+
+    .menu-close-btn {
+     width: 40px;
+     height: 40px;
+     }
+         .header-logo {
+            font-size: 20px;
+         }
+
     }
-}
+
 
  
 
@@ -224,13 +252,14 @@
      display: none;
     }
 
-    .mob-menu {
+    .backdrop {
         display: none;
     }
     .header-menu-list {
         display: flex;
         gap: 40px;
-        
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .header-menu-link {
@@ -246,20 +275,26 @@
         font-size: 20px;
     }
 
-    .icon-soc {
-        stroke-width: 2.50px;
-        stroke: #fff;
-    }
-
-    .icon-list {
+        
+    .icon-list-desk {
         display: flex;
         margin: 0 auto;
         gap: 10px;
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
-        .icon-link {
-        fill: #0c0c0c;
-            
-        }
+    .icon-item-desk {
+        display: block;
+        border: 1px solid rgba(12, 12, 12, 0.1);
+            border-radius: 10px;
+            padding: 8px;
+            width: 36px;
+            height: 36px;
+    }
+           .icon-link-desk:hover,
+                   .icon-link-desk:focus {
+                    fill: #3350e9;
+                   }
 
         .current {
         color: #0c0c0c;
