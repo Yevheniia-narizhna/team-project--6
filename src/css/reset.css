@@ -67,6 +67,7 @@ h2 {
 .section {
   padding-top: 30px;
   padding-bottom: 30px;
+  background: #fbfbfb;
 }
 .section-hero {
   padding-top: 60px;
@@ -75,6 +76,7 @@ h2 {
 .section-contactus {
   padding-top: 30px;
   padding-bottom: 60px;
+  background: #fbfbfb;
 }
 
 @media (min-width: 320px) and (max-width: 375px)
