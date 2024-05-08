@@ -57,13 +57,6 @@ margin-right: auto;
 display: block;
 }
 
-<<<<<<< HEAD
-.advert-button:hover,
-.advert-button:focus {
-    background-color: #fbfbfb;
-  }
-=======
->>>>>>> main
 @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .advert::before {
@@ -72,10 +65,6 @@ display: block;
         }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> main
 @media screen and (min-width: 768px) {
     .advert {
         gap: 32px;
@@ -87,26 +76,10 @@ display: block;
     font-size: 48px;
     max-width: 576px;
     }
-<<<<<<< HEAD
-}
-    .advertisement::before {
-        content: "";
-    background-image:
-        url("../img/about-tab-x1.jpg");
-
-=======
->>>>>>> main
         .advert::before {
             background-image:
                     url("/img/Images-advert/imagetab-1x.jpg");
         }
-<<<<<<< HEAD
-        .advert-button:hover,
-.advert-button:focus {
-    background-color: #fbfbfb;
-  }
-=======
->>>>>>> main
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 (min-resolution: 192dpi) and (min-width: 768px) {
@@ -133,13 +106,6 @@ display: block;
             background-image:
                 url("/img/Images-advert/imagedes-1x.jpg");
         }
-<<<<<<< HEAD
-        .advert-button:hover,
-.advert-button:focus {
-    background-color: #fbfbfb;
-  }
-=======
->>>>>>> main
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
@@ -147,9 +113,5 @@ display: block;
 .advert::before {
         background-image:
             url("/img/Images-advert/imagedes-2x.jpg");
-<<<<<<< HEAD
-
-=======
->>>>>>> main
     }
 }
