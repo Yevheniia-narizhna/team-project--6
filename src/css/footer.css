@@ -65,6 +65,7 @@ width: 100%; }
 }
 
 .button-footer{
+    display: block;
     text-align: center;
     border: 1px solid rgba(251, 251, 251, 0.2);
     border-radius: 16px;
@@ -301,8 +302,5 @@ height: 64px;
     opacity: 1;
 
 }
-
-
-
  }
 
